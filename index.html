@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas Geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p> Este es el primer taller del Curso práctico de JavaScript</p>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
+            <form action="" onsubmit="submitForm(event)">
+                <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado</label>
+                <input type="number" id="InputCuadrado"><br/>
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                <p id="calPerimetroP"></p>
+                <p id="calAreaP"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcular el área y perímetro de un triangulo</h2>
+            <form action=""onsubmit="submitForm(event)" >
+                <label for="InputTriangulo1">Escribe cuanto mide el primer lado</label>
+                <input type="number" id="InputTriangulo1"><br/>
+
+                <label for="InputTriangulo2">Escribe cuanto mide el segundo lado</label>
+                <input type="number" id="InputTriangulo2"><br/>
+
+                <label for="InputTrianguloBase">Escribe cuanto mide la base</label>
+                <input type="number" id="InputTrianguloBase"><br/>
+
+                <label for="InputTrianguloAlto">Escribe cuanto es la altura</label>
+                <input type="number" id="InputTrianguloAlto"><br/>
+
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el Área </button>
+                <p id="calPeriT"></p>
+                <p id="calAreaT"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcular el diametro, perimetro y área de un Circulo</h2>
+            <form action="" onsubmit="submitForm(event)">
+                <label for="InputRadio">Escribe cuanto  mide la base</label>
+                    <input type="number" id="InputRadio"><br/>
+
+                    <button type="button" onclick="calcularDiametroCirculo()">Calcular el Diametro</button>
+
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el Área</button>
+                    <p id="calDiameCir"></p>
+                    <p id="calPeriCir"></p>
+                    <p id="CalAreaCir"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/formas-geometricas.js"></script>
+</body>
+</html>
